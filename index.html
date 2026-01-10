@@ -1,217 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivasmi | Portfolio</title>
+<section id="projects">
+  <h2>Projects</h2>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #3b82f6, #93c5fd);
-      color: #fff;
-      text-align: center;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      padding: 80px 20px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      object-fit: cover;
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    .profile-pic:hover { transform: scale(1.05); }
-
-    h1 { font-size: 2.5rem; margin: 10px 0; }
-    header h2 { font-weight: normal; font-size: 1.2rem; margin-bottom: 30px; }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #dbeafe; }
-
-    section {
-      background: #fff;
-      color: #000;
-      padding: 50px 20px;
-      border-radius: 20px;
-      margin: 30px auto;
-      max-width: 900px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease-in-out;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-      text-align: left;
-    }
-    section.visible { opacity: 1; transform: translateY(0); }
-
-    section h2 { margin-top: 0; text-align: center; }
-
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivasmi | Portfolio</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #3b82f6, #93c5fd);
-      color: #fff;
-      text-align: center;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      padding: 80px 20px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      object-fit: cover;
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    .profile-pic:hover { transform: scale(1.05); }
-
-    h1 { font-size: 2.5rem; margin: 10px 0; }
-    header h2 { font-weight: normal; font-size: 1.2rem; margin-bottom: 30px; }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #dbeafe; }
-
-    section {
-      background: #fff;
-      color: #000;
-      padding: 50px 20px;
-      border-radius: 20px;
-      margin: 30px auto;
-      max-width: 900px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease-in-out;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-      text-align: left;
-    }
-    section.visible { opacity: 1; transform: translateY(0); }
-
-    section h2 { margin-top: 0; text-align: center; }
-
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: background 0.3s;
-    }
-    .btn:hover { background: #1e40af; }
-
-    .project-card {
-      background: #f3f4f6;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 15px 0;
-    }
-    .project-card h3 { margin-top: 0; }
-
-    footer {
-      padding: 30px 0 50px;
-      color: rgba(255,255,255,0.9);
-      font-size: 14px;
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(-20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
-
-    <h1>Hey, I'm Shivasmi! 👋</h1>
-    <h2>MSc Data Science | Machine Learning | Cloud & NLP Explorer</h2>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Say Hi!</a>
-    </nav>
-
-    <div>
-      <a href="Shivasmi_CV.pdf" class="btn">Download CV</a>
-    </div>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
+  <div class="project-card">
+    <h3>🧬 Protein Subcellular Localization (Dissertation)</h3>
     <p>
-      I am currently pursuing my MSc in Data Science at the University of Surrey.
-      I build reliable, data-driven solutions using Machine Learning, NLP, and Cloud technologies.
+      Built deep-learning models (ResNet-50, ResNeSt, SwinV2) for multi-label classification of 630K+ HPA protein images (19 labels),
+      evaluated using F1-macro and mAP. Implemented Grad-CAM for interpretability.
     </p>
-  </section>
+    <a href="https://github.com/shivasmi07/protein-localization-ai" class="btn" target="_blank">View Project</a>
+  </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Python, Machine Learning, SQL/NoSQL, Data Visualization, NLP, Deep Learning, Cloud Computing</p>
-  </section>
+  <div class="project-card">
+    <h3>⚙️ ML Pipeline with Comparative Analysis</h3>
+    <p>
+      Developed pipelines for regression, classification, and clustering. Included data cleaning, feature selection,
+      model evaluation, and visualization using Python (scikit-learn, matplotlib).
+    </p>
+    <a href="https://github.com/shivasmi07/machine-learning-projects" class="btn" target="_blank">View Project</a>
+  </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <div class="project-card">
+    <h3>🧠 Biomedical Abbreviation Detection (NLP)</h3>
+    <p>
+      Designed BiLSTM+CRF, FastText-based RNN, and RoBERTa models for biomedical abbreviation/long-form detection
+      on scientific literature. Deployed best model on Hugging Face Spaces.
+    </p>
+    <a href="https://github.com/rm22-dot/NER-Token-Classification" class="btn" target="_blank">View Project</a>
+  </div>
 
-    <div class="project-card">
-      <h3>RAG with Groq + Streamlit</h3>
-      <p>Document Q&A system using LLM + retrieval, deployed with Streamlit.</p>
-      <a href="https://github.com/shivasmi07/rag-groq-streamlit" class="btn" target="_blank" rel="noreferrer">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <h3>NER Token Classification</h3>
-      <p>Biomedical abbreviation / long-form detection (token classification).</p>
-      <a href="https://github.com/shiva
-
+  <div class="project-card">
+    <h3>🛒 Database System for Mumsnet Store</h3>
+    <p>
+      Built a normalized retail database with stored procedures and triggers to automate order processing.
+      Created BI cubes and dashboards in Power BI to analyze sales and customer behavior.
+    </p>
+    <a href="https://github.com/shivasmi07/mumsnet-database" class="btn" target="_blank">View Project</a>
+  </div>
+</section>
