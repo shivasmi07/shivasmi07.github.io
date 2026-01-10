@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <​meta charset="UTF-8">
- <​meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <​meta charset="UTF-8" />
+ <​meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title>Ritwik | Portfolio</title>
+
  <​style>
  body {
  margin: 0;
@@ -13,10 +14,12 @@
  text-align: center;
  scroll-behavior: smooth;
  }
+
  header {
  padding: 80px 20px;
  animation: fadeIn 1.2s ease-in-out;
  }
+
  .profile-pic {
  width: 150px;
  height: 150px;
@@ -25,19 +28,24 @@
  object-fit: cover;
  margin-bottom: 20px;
  transition: transform 0.3s;
+ background: rgba(255,255,255,0.2);
  }
+
  .profile-pic:hover {
  transform: scale(1.05);
  }
+
  h1 {
  font-size: 2.5rem;
  margin: 10px 0;
  }
- h2 {
+
+ header h2 {
  font-weight: normal;
  font-size: 1.2rem;
  margin-bottom: 30px;
  }
+
  nav a {
  margin: 0 15px;
  text-decoration: none;
@@ -46,9 +54,11 @@
  font-size: 1rem;
  transition: color 0.3s;
  }
+
  nav a:hover {
  color: hashtag#dbeafe;
  }
+
  section {
  background: hashtag#fff;
  color: #000;
@@ -59,11 +69,20 @@
  opacity: 0;
  transform: translateY(30px);
  transition: all 0.8s ease-in-out;
+ box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+ text-align: left;
  }
+
  section.visible {
  opacity: 1;
  transform: translateY(0);
  }
+
+ section h2 {
+ margin-top: 0;
+ text-align: center;
+ }
+
  .btn {
  display: inline-block;
  background: hashtag#2563eb;
@@ -75,77 +94,113 @@
  margin-top: 20px;
  transition: background 0.3s;
  }
+
  .btn:hover {
  background: hashtag#1e40af;
  }
+
  .project-card {
  background: hashtag#f3f4f6;
  border-radius: 10px;
  padding: 20px;
  margin: 15px 0;
  }
+
+ .project-card h3 {
+ margin-top: 0;
+ }
+
  @keyframes fadeIn {
  0% { opacity: 0; transform: translateY(-20px); }
  100% { opacity: 1; transform: translateY(0); }
  }
+
+ footer {
+ padding: 30px 0 50px;
+ color: rgba(255,255,255,0.9);
+ font-size: 14px;
+ }
  <​/style>
 </head>
+
 <body>
  <header>
- <img src="your-photo.jpg" alt="Profile Picture" class="profile-pic">
+ <!-- Put your image in the same folder as index.html and name it profile.jpg -->
+ <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+
  <h1>Hey, I'm Ritwik! 👋</h1>
  <h2>MSc Data Science | Machine Learning | Cloud & NLP Explorer</h2>
+
  <nav>
  <a href="hashtag#about">About</a>
  <a href="hashtag#skills">Skills</a>
  <a href="hashtag#projects">Projects</a>
  <a href="hashtag#contact">Say Hi!</a>
  </nav>
+
+ <!-- Put your CV in the same folder and name it Ritwik_CV.pdf -->
+ <div>
  <a href="Ritwik_CV.pdf" class="btn">Download CV</a>
+ </div>
  </header>
 
  <section id="about">
  <h2>About Me</h2>
- <p>I am a Data Science professional currently pursuing my MSc in Data Science at the University of Surrey. I have over 5 years of QA Engineering experience and I specialize in building reliable, data-driven solutions using Machine Learning, NLP, and Cloud technologies.</p>
+ <p>
+ I am a Data Science professional currently pursuing my MSc in Data Science at the University of Surrey.
+ I have over 5 years of QA Engineering experience and I specialize in building reliable, data-driven
+ solutions using Machine Learning, NLP, and Cloud technologies.
+ </p>
  </section>
 
  <section id="skills">
  <h2>Skills</h2>
- <p>Python, Machine Learning, SQL/NoSQL, Data Visualization, NLP, Deep Learning, Cloud Computing</p>
+ <p>
+ Python, Machine Learning, SQL/NoSQL, Data Visualization, NLP, Deep Learning, Cloud Computing
+ </p>
  </section>
 
  <section id="projects">
  <h2>Personal Projects</h2>
+
  <div class="project-card">
  <h3>Project 1: Sentiment Analysis Tool</h3>
  <p>A machine learning-based tool to analyze sentiment in customer reviews using NLP techniques.</p>
- <a href="https://github.com/ritwik4m/sentiment-analysis" class="btn">View Project</a>
+ <a href="https://github.com/ritwik4m/sentiment-analysis" class="btn" target="_blank" rel="noreferrer">View Project</a>
  </div>
+
  <div class="project-card">
  <h3>Project 2: Cloud Data Pipeline</h3>
  <p>Implemented a scalable data pipeline on AWS for real-time analytics.</p>
- <a href="https://github.com/ritwik4m/cloud-data-pipeline" class="btn">View Project</a>
+ <a href="https://github.com/ritwik4m/cloud-data-pipeline" class="btn" target="_blank" rel="noreferrer">View Project</a>
  </div>
  </section>
 
  <section id="contact">
  <h2>Say Hi!</h2>
- <p>Email: shivasmish@gmail.com</p>
- <p>Connect on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+ <p>Email: <a href="mailto:shivasmish@gmail.com">shivasmish@gmail.com</a></p>
+ <p>Connect on <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></p>
  </section>
 
+ <footer>© <span id="y"></span> Ritwik</footer>
+
  <​script>
+ // Footer year
+ document.getElementById("y").textContent = new Date().getFullYear();
+
  // Scroll animation for sections
- const sections = document.querySelectorAll('section');
- window.addEventListener('scroll', () => {
- sections.forEach(section => {
+ const sections = document.querySelectorAll("section");
+ const reveal = () => {
+ sections.forEach((section) => {
  const rect = section.getBoundingClientRect();
- if (rect.top < window.innerHeight - 100) {
- section.classList.add('visible');
+ if (rect.top < window.innerHeight - 120) {
+ section.classList.add("visible");
  }
  });
- });
+ };
+
+ window.addEventListener("scroll", reveal);
+ reveal(); // run once on load
  <​/script>
 </body>
 </html>
-
