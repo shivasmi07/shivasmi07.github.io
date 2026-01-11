@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ritwik | Portfolio</title>
+  <title>Shivasmi Sharma | Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #3b82f6, #93c5fd);
       color: #fff;
-      text-align: center;
       scroll-behavior: smooth;
     }
     header {
       padding: 80px 20px;
+      text-align: center;
       animation: fadeIn 1.2s ease-in-out;
     }
     .profile-pic {
@@ -84,6 +84,13 @@
       padding: 20px;
       margin: 15px 0;
     }
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(-20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -93,20 +100,20 @@
 <body>
   <header>
     <img src="your-photo.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Hey, I'm Ritwik! 👋</h1>
+    <h1>Hey, I'm Shivasmi Sharma! 👋</h1>
     <h2>MSc Data Science | Machine Learning | Cloud & NLP Explorer</h2>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Say Hi!</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="Ritwik_CV.pdf" class="btn">Download CV</a>
+    <a href="Shivasmi_CV.pdf" class="btn">Download CV</a>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a Data Science professional currently pursuing my MSc in Data Science at the University of Surrey. I have over 5 years of QA Engineering experience and I specialize in building reliable, data-driven solutions using Machine Learning, NLP, and Cloud technologies.</p>
+    <p>Data Scientist with 3+ years of experience applying statistical analysis and machine learning to complex, real-world datasets. Experienced in handling noisy data, performing exploratory and predictive analysis, and building scalable workflows in Python and SQL. Brings a strong research mindset, attention to data quality, and the ability to convert analytical findings into meaningful insights.</p>
   </section>
 
   <section id="skills">
@@ -115,53 +122,31 @@
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-
+    <h2>Personal Projects</h2>
     <div class="project-card">
-      <h3>🤬 Protein Subcellular Localization (Dissertation)</h3>
-      <p>
-        Built deep-learning models (ResNet-50, ResNeSt, SwinV2) for multi-label classification of 630K+ HPA protein images (19 labels),
-        evaluated using F1-macro and mAP. Implemented Grad-CAM for interpretability.
-      </p>
-      <a href="https://github.com/shivasmi07/protein-localization-ai" class="btn" target="_blank">View Project</a>
+      <h3>Project 1: Sentiment Analysis Tool</h3>
+      <p>A machine learning-based tool to analyze sentiment in customer reviews using NLP techniques.</p>
+      <a href="https://github.com/ritwik4m/sentiment-analysis" class="btn">View Project</a>
     </div>
-
     <div class="project-card">
-      <h3>⚙️ ML Pipeline with Comparative Analysis</h3>
-      <p>
-        Developed pipelines for regression, classification, and clustering. Included data cleaning, feature selection,
-        model evaluation, and visualization using Python (scikit-learn, matplotlib).
-      </p>
-      <a href="https://github.com/shivasmi07/machine-learning-projects" class="btn" target="_blank">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <h3>🧠 Biomedical Abbreviation Detection (NLP)</h3>
-      <p>
-        Designed BiLSTM+CRF, FastText-based RNN, and RoBERTa models for biomedical abbreviation/long-form detection
-        on scientific literature. Deployed best model on Hugging Face Spaces.
-      </p>
-      <a href="https://github.com/rm22-dot/NER-Token-Classification" class="btn" target="_blank">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <h3>🛒 Database System for Mumsnet Store</h3>
-      <p>
-        Built a normalized retail database with stored procedures and triggers to automate order processing.
-        Created BI cubes and dashboards in Power BI to analyze sales and customer behavior.
-      </p>
-      <a href="https://github.com/shivasmi07/mumsnet-database" class="btn" target="_blank">View Project</a>
+      <h3>Project 2: Cloud Data Pipeline</h3>
+      <p>Implemented a scalable data pipeline on AWS for real-time analytics.</p>
+      <a href="https://github.com/ritwik4m/cloud-data-pipeline" class="btn">View Project</a>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Say Hi!</h2>
-    <p>Email: shivasmish@gmail.com</p>
-    <p>Connect on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:shivasmisharma646@gmail.com">shivasmisharma646@gmail.com</a></p>
+      <p>Phone: <a href="tel:+447823877547">+44 7823 877547</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/shivasmi-sharma" target="_blank">linkedin.com/in/shivasmi-sharma</a></p>
+      <p>GitHub: <a href="https://github.com/shivasmi07" target="_blank">github.com/shivasmi07</a></p>
+      <p><strong>UK Right to Work:</strong> Graduate Visa (valid to Jan 2028)</p>
+    </div>
   </section>
 
   <script>
-    // Scroll animation for sections
     const sections = document.querySelectorAll('section');
     window.addEventListener('scroll', () => {
       sections.forEach(section => {
