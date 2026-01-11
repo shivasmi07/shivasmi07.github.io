@@ -1,149 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivasmi Sharma | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #3b82f6, #93c5fd);
-      color: #fff;
-      text-align: center;
-      scroll-behavior: smooth;
-    }
-    header {
-      padding: 80px 20px 30px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      object-fit: cover;
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-    }
-    .profile-pic:hover {
-      transform: scale(1.05);
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 10px 0;
-    }
-    h2 {
-      font-weight: normal;
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #dbeafe;
-    }
-    section {
-      background: #fff;
-      color: #000;
-      padding: 50px 20px;
-      border-radius: 20px;
-      margin: 30px auto;
-      max-width: 900px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease-in-out;
-    }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #1e40af;
-    }
-    .project-card {
-      background: #f3f4f6;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 15px 0;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(-20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Shivasmi Sharma | Portfolio</title>
+ <style>
+   body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background: linear-gradient(to bottom, #3b82f6, #93c5fd);
+     color: #fff;
+     scroll-behavior: smooth;
+   }
+   .container {
+     max-width: 900px;
+     margin: auto;
+     padding: 40px 20px;
+     text-align: center;
+   }
+   .profile-pic {
+     width: 160px;
+     height: 160px;
+     border-radius: 50%;
+     border: 4px solid #fff;
+     object-fit: cover;
+     margin-bottom: 20px;
+   }
+   h1, h2 {
+     margin-bottom: 10px;
+   }
+   p {
+     font-size: 1rem;
+     line-height: 1.6;
+   }
+   .btn {
+     display: inline-block;
+     background: #2563eb;
+     color: #fff;
+     padding: 10px 20px;
+     margin: 10px;
+     border-radius: 25px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: background 0.3s;
+   }
+   .btn:hover {
+     background: #1e40af;
+   }
+   section {
+     background: #fff;
+     color: #000;
+     padding: 40px 30px;
+     margin: 30px auto;
+     border-radius: 20px;
+     max-width: 900px;
+     opacity: 0;
+     transform: translateY(40px);
+     transition: all 0.8s ease-in-out;
+   }
+   section.visible {
+     opacity: 1;
+     transform: translateY(0);
+   }
+   .project-card {
+     background: #f3f4f6;
+     border-radius: 10px;
+     padding: 20px;
+     margin: 15px 0;
+     text-align: left;
+   }
+   .contact-links a {
+     display: block;
+     margin: 5px 0;
+     color: #000;
+     text-decoration: none;
+   }
+ </style>
 </head>
 <body>
-  <header>
+  <div class="container">
     <img src="your-photo.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Hey, I'm Shivasmi Sharma! 👋</h1>
-    <h2>Data Scientist | MSc Data Science | Machine Learning | NLP & Cloud</h2>
-    <a href="Shivasmi_CV.pdf" class="btn">Download CV</a>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
+    <h1>Shivasmi Sharma</h1>
+    <h2>Data Scientist | MSc Data Science | Cloud & Biomedical AI</h2>
     <p>Data Scientist with 3+ years of experience applying statistical analysis and machine learning to complex, real-world datasets. Experienced in handling noisy data, performing exploratory and predictive analysis, and building scalable workflows in Python and SQL. Brings a strong research mindset, attention to data quality, and the ability to convert analytical findings into meaningful insights.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Details</h2>
-    <p>Email: shivasmisharma646@gmail.com</p>
-    <p>Phone: +44 7823 877547</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/shivasmi-sharma" target="_blank">linkedin.com/in/shivasmi-sharma</a></p>
-    <p>GitHub: <a href="https://github.com/shivasmi07" target="_blank">github.com/shivasmi07</a></p>
-    <p>UK Right to Work: Graduate Visa (valid to Jan 2028)</p>
-  </section>
+    <div class="contact-links">
+      <p>Email: <a href="mailto:shivasmisharma646@gmail.com">shivasmisharma646@gmail.com</a></p>
+      <p>Phone: +44 7823 877547</p>
+      <p><a href="https://linkedin.com/in/shivasmi-sharma" target="_blank">LinkedIn</a></p>
+      <p><a href="https://github.com/shivasmi07" target="_blank">GitHub</a></p>
+      <p>UK Right to Work: Graduate Visa (valid to Jan 2028)</p>
+    </div>
+    <a href="Shivasmi_CV.pdf" class="btn">Download CV</a>
+  </div>
 
   <section id="education">
     <h2>Education</h2>
-    <h3>MSc Data Science</h3>
-    <p>University of Surrey, United Kingdom (Sep 2024 – Sep 2025)</p>
+    <p><strong>MSc Data Science</strong> (Sep 2024 – Sep 2025)<br>
+    University of Surrey, United Kingdom<br>
+    • Dissertation: Protein Subcellular Localization with CNNs & Vision Transformers – ResNet-50, ResNeSt-50d, SwinV2-Small on 630k+ HPA images (19 labels); focal loss, threshold tuning; Grad-CAM; macro/micro F1 and mAP.</p>
+
+    <p><strong>B.Tech Bioinformatics</strong> (2016 – 2020)<br>
+    Amity University, India<br>
+    • Dissertation: Data Analysis of Environmental Samples (IITM Bioincubator) – Performed exploratory and statistical analysis on unstructured biological sequence datasets, transforming and visualising data to identify patterns and anomalies using Python (Seaborn, Matplotlib).</p>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <p><strong>Data Scientist (Healthcare Analytics)</strong><br>
+    Lifecell International Pvt. Ltd., Remote<br>
+    Nov 2023 – Aug 2024</p>
     <ul>
-      <li>Dissertation: Protein Subcellular Localization with CNNs & Vision Transformers – ResNet-50, ResNeSt-50d, SwinV2-Small on 630k+ HPA images (19 labels); focal loss, threshold tuning; Grad-CAM; macro/micro F1 and mAP.</li>
+      <li>Built and optimised scalable healthcare data analysis pipelines in Python, reducing QC time by 70% and improving turnaround by 50%.</li>
+      <li>Applied statistical testing (A/B testing, Bayesian testing) and machine learning methods for pattern discovery, risk signal detection, and association analysis across diverse biomedical datasets.</li>
+      <li>Integrated structured and semi-structured data (tabular, JSON, metadata) into unified pipelines using SQL, PostgreSQL, and Python.</li>
+      <li>Containerised and deployed workflows using Docker, Git, and cloud platforms (AWS, GCP), collaborating closely with clinicians and IT teams.</li>
     </ul>
-    <h3>B.Tech Bioinformatics</h3>
-    <p>Amity University, India (2016 – 2020)</p>
+
+    <p><strong>Data Scientist (Healthcare Analytics)</strong><br>
+    Bionivid Technology Pvt. Ltd., Bangalore, India<br>
+    Aug 2021 – Sep 2023</p>
     <ul>
-      <li>Dissertation: Data Analysis of Environmental Samples (IITM Bioincubator) – Performed exploratory and statistical analysis on unstructured biological sequence datasets, transforming and visualising data to identify patterns and anomalies using Python (Seaborn, Matplotlib).</li>
+      <li>Analysed large-scale biomedical and healthcare datasets using Python and R, supporting disease-oriented and exploratory analyses.</li>
+      <li>Performed comparative and cohort-level statistical analyses, including feature-level evaluation and correlation studies.</li>
+      <li>Conducted time-series and longitudinal analyses to identify temporal trends across experimental and observational data.</li>
+      <li>Developed reusable preprocessing and visualisation workflows with version control, working with cross-functional teams to support reporting and decision-making.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <p>Some of the tools I have worked on, libraries I have used in academic projects, and machine learning algorithms I am familiar with are listed below.</p>
+    <ul>
+      <li><strong>AI / ML Frameworks:</strong> PyTorch, TensorFlow, scikit-learn, Hugging Face, Weights & Biases</li>
+      <li><strong>Data Science & Statistics:</strong> pandas, NumPy; A/B testing, Bayesian testing</li>
+      <li><strong>Programming & Databases:</strong> Python (proficient), R, SQL, PostgreSQL, Bash</li>
+      <li><strong>Cloud & Deployment:</strong> GCP, AWS (EC2, S3), Docker</li>
+      <li><strong>Software Development & Pipelines:</strong> Git/GitLab CI/CD, FastAPI, HPC (Linux)</li>
+      <li><strong>Visualisation & Apps:</strong> Matplotlib, Seaborn, ggplot2, Streamlit</li>
     </ul>
   </section>
 
   <section id="projects">
-    <h2>Personal Projects</h2>
+    <h2>Projects</h2>
     <div class="project-card">
-      <h3>Project 1: Sentiment Analysis Tool</h3>
-      <p>A machine learning-based tool to analyze sentiment in customer reviews using NLP techniques.</p>
-      <a href="https://github.com/ritwik4m/sentiment-analysis" class="btn">View Project</a>
+      <h3>Protein Subcellular Localization (MSc Dissertation)</h3>
+      <p>Developed CNN and Transformer-based models for multi-label classification of 630K+ HPA protein images (19 labels); evaluated using F1-macro and mAP with Grad-CAM interpretability.</p>
+      <a href="https://github.com/shivasmi07/protein-localization-ai" class="btn">View Project</a>
     </div>
     <div class="project-card">
-      <h3>Project 2: Cloud Data Pipeline</h3>
-      <p>Implemented a scalable data pipeline on AWS for real-time analytics.</p>
-      <a href="https://github.com/ritwik4m/cloud-data-pipeline" class="btn">View Project</a>
+      <h3>ML Pipeline with Comparative Analysis</h3>
+      <p>Built end-to-end ML pipelines for regression, classification, and clustering with systematic preprocessing and model comparison.</p>
+      <a href="https://github.com/shivasmi07/machine-learning-projects" class="btn">View Project</a>
     </div>
-  </section>
-
-  <section id="contact-form">
-    <h2>Say Hi!</h2>
-    <p>Email: shivasmish@gmail.com</p>
-    <p>Connect on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+    <div class="project-card">
+      <h3>Biomedical Abbreviation Detection (NLP)</h3>
+      <p>Designed and evaluated neural models (BiLSTM+CRF, FastText-based RNNs, RoBERTa) for biomedical abbreviation detection; deployed the best-performing model to Hugging Face Spaces.</p>
+      <a href="https://github.com/rm22-dot/NER-Token-Classification" class="btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Database Systems Project – Mumsnet Online Store</h3>
+      <p>Designed and normalised a retail database (1NF–3NF); implemented stored procedures with transaction handling for automated order processing. Built BI cubes with KPIs and analysed customer behaviour using Power BI.</p>
+      <a href="https://github.com/shivasmi07/mumsnet-database" class="btn">View Project</a>
+    </div>
   </section>
 
   <script>
